@@ -1,76 +1,87 @@
-![Screenshot_20250511-183358](https://github.com/user-attachments/assets/a380f53d-b9f5-44fc-90e5-11d3a4c383e8)
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>¿Juli, quieres ser mi novia?</title>
+  <title>Una preguntita para Juli</title>
   <style>
     body {
-      background-color: #fff0f5;
-      font-family: "Comic Sans MS", cursive;
-      text-align: center;
-      padding-top: 100px;
+      background: linear-gradient(to right, #ffdde1, #f8cddc);
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
 
     h1 {
-      color: #d63384;
+      color: #c2185b;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .botones {
+      display: flex;
+      gap: 30px;
     }
 
     button {
-      padding: 15px 25px;
-      font-size: 18px;
-      margin: 20px;
+      font-size: 20px;
+      padding: 15px 30px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     #yesBtn {
-      background-color: #ff69b4;
+      background-color: #e91e63;
       color: white;
     }
 
     #noBtn {
-      background-color: #f0f0f0;
-      color: #333;
-      position: relative;
+      background-color: #eeeeee;
+      color: #555;
+      position: absolute;
     }
 
-    #message {
-      font-size: 24px;
-      color: #e83e8c;
-      margin-top: 40px;
+    #respuesta {
+      margin-top: 50px;
+      font-size: 26px;
+      color: #880e4f;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h1>💌 Juli, ¿quieres ser mi novia? 🥺</h1>
+  <h1>💞 Juli, ¿puedo ser tu novia?</h1>
 
-  <button id="yesBtn">Sí 💗</button>
-  <button id="noBtn">No 😳</button>
+  <div class="botones">
+    <button id="yesBtn">Sí 💗</button>
+    <button id="noBtn">No 😳</button>
+  </div>
 
-  <div id="message"></div>
+  <div id="respuesta"></div>
 
   <script>
     const yesBtn = document.getElementById("yesBtn");
     const noBtn = document.getElementById("noBtn");
-    const message = document.getElementById("message");
+    const respuesta = document.getElementById("respuesta");
 
     yesBtn.addEventListener("click", () => {
-      message.textContent = "¡Ya sabía que querías ser mi novia! 💖✨";
+      respuesta.textContent = "¡Ya sabía que querías ser mi novia! 💖✨";
     });
 
     noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 100);
-      noBtn.style.position = "absolute";
+      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
       noBtn.style.left = `${x}px`;
       noBtn.style.top = `${y}px`;
     });
   </script>
 
 </body>
-</html>![0d74806cb18b69603c8470f23e67ede3](https://github.com/user-attachments/assets/9634a565-ba49-4121-97c4-c1a074846922)
-# declaracion
+</html>
