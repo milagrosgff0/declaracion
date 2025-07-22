@@ -1,87 +1,66 @@
-<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Una preguntita para Juli</title>
-  <style>
-    body {
-      background: linear-gradient(to right, #ffdde1, #f8cddc);
-      font-family: "Segoe UI", sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
 
-    h1 {
-      color: #c2185b;
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
+<meta charset="UTF-8">
 
-    .botones {
-      display: flex;
-      gap: 30px;
-    }
+<meta name="viecharsetwport"
 
-    button {
-      font-size: 20px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+content="width=device-width, initial-scale=1.0">
 
-    #yesBtn {
-      background-color: #e91e63;
-      color: white;
-    }
+<link rel="stylesheet"
 
-    #noBtn {
-      background-color: #eeeeee;
-      color: #555;
-      position: absolute;
-    }
+href="https://stackpath.bootstrapcdn.com/bootstrap /4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baD1411NQApFmC26EwAOH8WgZ15MYYxFf
 
-    #respuesta {
-      margin-top: 50px;
-      font-size: 26px;
-      color: #880e4f;
-      text-align: center;
-    }
-  </style>
+c+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+
+</link>
+
+<title>Document</title>
+
 </head>
+
 <body>
 
-  <h1>💞 Juli, ¿puedo ser tu novia?</h1>
+<div class="anim">
 
-  <div class="botones">
-    <button id="yesBtn">Sí 💗</button>
-    <button id="noBtn">No 😳</button>
-  </div>
+</div>
 
-  <div id="respuesta"></div>
+<div class="question">
 
-  <script>
-    const yesBtn = document.getElementById("yesBtn");
-    const noBtn = document.getElementById("noBtn");
-    const respuesta = document.getElementById("respuesta");
+<h1>¿Juli, puedo ser tu novia?</h1>
 
-    yesBtn.addEventListener("click", () => {
-      respuesta.textContent = "¡Ya sabía que querías ser mi novia! 💖✨";
-    });
+</div>
 
-    noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-      noBtn.style.left = `${x}px`;
-      noBtn.style.top = `${y}px`;
-    });
-  </script>
+<div class="message">
+
+<h1>Sabía que dirías que si Juli
+
+</h1>
+
+<div class="image">
+
+<img width="150px"
+
+src="https://upload.wikimedia.org/wikipedia/common s/thumb/3/35/Emoji_u2665.svg/1200px-
+
+Emoji_u2665.svg.png" />
+
+</div>
+
+</div>
+<button type="button" class="but button btn-
+
+danger no">No</button>
+
+<button type="button" class="but button btn-
+
+success yes">Si</button>
+
+<script src="./index.js"></script>
 
 </body>
+
 </html>
